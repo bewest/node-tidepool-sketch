@@ -113,6 +113,19 @@ development of a system composed of these daemons.
 
 Some daemons were not designed to be used as npm modules.
 As a result, some daemons require being installed and `npm link`'d
-locally in order for things to run correctly.  If that bothers you,
-contact the authors of those daemons, not the authors of this repo.
+locally in order for things to run correctly.
+
+#### Linking
+
+The following modules are known to need linking/patching in order to
+run:
+
+* blip/tideline needs `bower link` as well
+* armada (group-api)
+* user-api
+* styx
+* hakken
+* jellyfish
+
+The rest of the daemons seem to work ok installed through npm.
 
