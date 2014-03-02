@@ -111,3 +111,8 @@ This configuration is not fit for any purpose.  The intended use of
 this code is solely to experiment with local changes in the
 development of a system composed of these daemons.
 
+Some daemons were not designed to be used as npm modules.
+As a result, some daemons require being installed and `npm link`'d
+locally in order for things to run correctly.  If that bothers you,
+contact the authors of those daemons, not the authors of this repo.
+

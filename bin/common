@@ -10,3 +10,9 @@ function write_pid ( ) {
   PROC=$2
   echo $PROC > run/$NAME.pid
 }
+
+function describeWatch ( ) {
+  service=$1
+  echo "{ \"type\": \"random\", \"service\": \"$service\" }"
+
+}

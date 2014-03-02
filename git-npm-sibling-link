@@ -10,8 +10,11 @@ echo setting up npm to use $PACKAGE from $SIBLING
 ( cd $SIBLING;
   pwd
   npm version
-  sudo npm link
+  npm link
 )
 pwd
-npm link $PACKAGE
+# required eg when package names, like groups-api does not match repo
+# name, armada
+NAME=$(cat $SIBLING/package.json | tr -d '\n' | json -C name)
+npm link "${NAME}"
 
