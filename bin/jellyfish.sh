@@ -6,6 +6,7 @@ ENVSTR=$(load_env $ETC/common.env $ETC/jellyfish.env)
 echo starting $NODE $0
 sleep 7
 export USER_API_SERVICE="$(describeWatch user-api-local)"
-export SEAGULL_SERVICE="$(describeWatch seagull-local)"
+export SEAGULL_SERVICE="$(describeWatch 'seagull-local')"
+export FILE_STORAGE="{ \"type\": \"sandcastle\", \"serviceSpec\": $(describeWatch sandcastle-local) }"
 NODE="$NODE -d 8"
-env $(echo "$ENVSTR") $NODE node_modules/jellyfish/app.js | cat
+env $(echo "$ENVSTR") $NODE node_modules/jellyfish/app.js
