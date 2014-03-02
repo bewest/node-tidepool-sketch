@@ -1,21 +1,21 @@
 {
-  "name": "sketch-tidepool-platform",
+  "name": "node-tidepool-sketch",
   "version": "0.0.0",
-  "description": "tools =====",
+  "description": "sketch out tool to run all daemons at once",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/tidepool-org/tools.git"
+    "url": "git://github.com/tidepool-org/node-tidepool-sketch.git"
   },
   "author": "Tidepool contributors",
   "license": "GPL-2",
   "bugs": {
-    "url": "https://github.com/tidepool-org/tools/issues"
+    "url": "https://github.com/tidepool-org/node-tidepool-sketch/issues"
   },
-  "homepage": "https://github.com/tidepool-org/tools",
+  "homepage": "https://github.com/tidepool-org/node-tidepool-sketch",
   "dependencies": {
     "hakken": "git://github.com/tidepool-org/hakken.git#master",
     "user-api": "git://github.com/tidepool-org/user-api.git#master",
